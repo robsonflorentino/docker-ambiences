@@ -6,7 +6,7 @@ Esta é uma imagem simples do Apache, incluindo suporte SSL. Para usar essa imag
 * /var/log/apache2, opcional, se você quiser armazenar arquivos de logs que sejam visíveis fora do contêiner
 * /etc/ssl, opcional, se você deseja usar SSL com chaves reais.
 
-## Um lembrete no SSL
+## Sobre o SSL
 
 De acordo com os padrões, o Apache usará a chave "snakeoil" incluída ao servir SSL. Obviamente isso não é suficiente ou aconselhável em ambientes de produção, então você deve montar suas chaves reais em "/etc/ssl". Se você nomeá-los "certs/ssl-cert-snakeoil.pem" e "private/ssl-cert-snakeoil.key", você poderá obter a configuração padrão. Caslo contrário, você devetá incluir uma checagem de site. Se vocé não quiser usar SSL, podera desabilitar o encaminhamento da porta 443 ao iniciar o contêiner(Veja logo abaixo).
 
