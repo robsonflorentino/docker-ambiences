@@ -1,4 +1,4 @@
-# apache-docker
+# Instruções de uso
 
 Esta é uma imagem simples do Apache, incluindo suporte SSL. Para usar essa imagem efetivamente, você precisará montar:
 
