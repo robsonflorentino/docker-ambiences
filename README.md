@@ -4,6 +4,7 @@ Este repositório contém arquivos para a compilação e imagens Docker constru�
 
 Influi as seguintes imagens:
 
-* apache: Uma instação simples do Apache, incluindo suporte a SSL.
+* apache: Uma instalação simples do Apache, incluíndo suporte a SSL.
+* apache-php: Uma intalação simples do Apache, incluíndo suporte a SSL e PHP.
 
 -Robson Florentino
