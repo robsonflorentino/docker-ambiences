@@ -6,5 +6,6 @@ Influi as seguintes imagens:
 
 * apache: Uma instalação simples do Apache, incluíndo suporte a SSL.
 * apache-php: Uma intalação simples do Apache, incluíndo suporte a SSL e PHP.
+* laravel: Uma instalação do apache-php, com o framework Laravel pronto para a sua aplicação.
 
 -Robson Florentino

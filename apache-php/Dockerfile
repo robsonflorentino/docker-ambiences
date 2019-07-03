@@ -1,7 +1,8 @@
 FROM rflorent/apache
-MAINTAINER Ed Boraas <ed@boraas.ca>
+MAINTAINER Ed Boraas <robson.florentino.silva@gmail.com>
 
-RUN apt-get update && apt-get -y install php php-mysql libapache2-mod-php && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get -y install php php-mysql libapache2-mod-php && apt-get clean && rm -rf /var/lib/apt/lists/* 
+
 RUN /usr/sbin/a2enmod mpm_prefork
 
 EXPOSE 80

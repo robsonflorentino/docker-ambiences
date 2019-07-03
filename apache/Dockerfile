@@ -1,7 +1,10 @@
-FROM ubuntu-debootstrap
+FROM ubuntu
 MAINTAINER Robson Florentino <robson.florentino.silva@gmail.com>
 
-RUN apt-get update && apt-get -y install apache2 && apt-get clean && rm -rf /var/lib/apt/lists/*
+ENV TZ=America/Sao_Paulo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN apt-get update && apt-get -y install apache2 && apt-get clean && rm -rf /var/lib/apt/lists/* 
 
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
